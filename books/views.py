@@ -9,3 +9,5 @@ class BookListCreateAPIView(generics.ListCreateAPIView):
 class BookRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Book.objects.all()  # Retrieve all books from the database
     serializer_class = BookSerializer  # Use the BookSerializer for serialization
+
+
